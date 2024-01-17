@@ -130,7 +130,6 @@ function update_script() {
   wget -q "https://github.com/just-containers/s6-overlay/releases/download/v3.1.5.0/s6-overlay-x86_64.tar.xz"
   tar -C / -Jxpf s6-overlay-noarch.tar.xz
   tar -C / -Jxpf s6-overlay-x86_64.tar.xz
-  python3 -m pip install --no-cache-dir certbot-dns-cloudflare &>/dev/null
   python3 -m pip install --no-cache-dir certbot-dns-godaddy &>/dev/null
   python3 -m pip install --no-cache-dir certbot-dns-ovh &>/dev/null
   msg_ok "Setup Enviroment"
